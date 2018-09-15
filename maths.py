@@ -4,3 +4,4 @@ def add_numbers(*args):
         if not isinstance(num, int):
             raise ValueError
         result = num + result
+    return result

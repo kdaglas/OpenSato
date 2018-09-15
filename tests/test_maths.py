@@ -12,3 +12,13 @@ class TestMaths(unittest.TestCase):
     def test_can_throw_type_error_for_str(self):
         result = add_numbers(1,'2')
         self.assertEquals(3, result)
+        with self.assertRaises(ValueError):
+            pass
+
+    def test_can_throw_value_error(self):
+        with self.assertRaises(ValueError):
+            add_numbers(1, '2')
+            
+
+
+
